@@ -1,1 +1,10 @@
-
+<grafana>/pkg/api/index.go
+<grafana>/pkg/services/licensing/oss.go
+<grafana>/public/app/core/components/Branding/Branding.tsx
+<grafana>/public/app/core/components/Footer/Footer.tsx
+<grafana>/public/app/core/components/Page/Page.tsx
+<grafana>/public/app/plugins/panel/gettingstarted/steps.ts
+<grafana>/public/app/plugins/panel/welcome/Welcome.tsx
+<grafana>/public/img/grafana_icon.svg
+<grafana>/public/views/index.html
+.. index-template.html
