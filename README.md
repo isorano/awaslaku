@@ -69,26 +69,44 @@ Case-4: removing "Stats and licensing"
 At menubar and sidebar: pkg/services/licensing/oss.go
 
 BUILD
+
 Frontend
+
 YARN_CHECKSUM_BEHAVIOR=update yarn install --immutable
+
 mkdir plugins-bundled/external
+
 export NODE_OPTIONS="--max-old-space-size=8192"
+
 make build-js
 
 Backend
+
 make gen-go
+
 make deps-go
+
 make build-go  
 
 List of files to be modified
+
 <grafana>/pkg/api/index.go
+    
 <grafana>/pkg/services/licensing/oss.go
+    
 <grafana>/public/app/core/components/Branding/Branding.tsx
+    
 <grafana>/public/app/core/components/Footer/Footer.tsx
+    
 <grafana>/public/app/core/components/Page/Page.tsx
+    
 <grafana>/public/app/plugins/panel/gettingstarted/steps.ts
+    
 <grafana>/public/app/plugins/panel/welcome/Welcome.tsx
+    
 <grafana>/public/img/grafana_icon.svg
+    
 <grafana>/public/views/index.html
+    
 .. index-template.html
 
