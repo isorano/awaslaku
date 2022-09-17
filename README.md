@@ -2,15 +2,15 @@
 URL: https://github.com/grafana/grafana/blob/main/contribute/developer-guide.md
 
 ## Requirements
-    - Git
-    - Go (see go.mod for minimum required version)
-    - Node.js (Long Term Support)
-    - Yarn
+- Git
+- Go (see go.mod for minimum required version)
+- Node.js (Long Term Support)
+- Yarn
     ```
       $ sudo corepack enable
     ```
-    - [make]
-    - [gcc]
+- [make]
+- [gcc]
     
 ## Clone Grafana
 
@@ -54,22 +54,22 @@ app/plugins/panel/gettingstarted/steps.ts
 ```
 
 Case-0: removing "Library panels"
-At menubar: pkg/api/index.go 
-At sidebar: locales/en-US/messages.po
+- At menubar: pkg/api/index.go 
+- At sidebar: locales/en-US/messages.po
 
 Case-1: change "Welcome to Grafana"
-app/core/components/Branding/Branding.tsx
-app/plugins/panel/welcome/Welcome.tsx
-app/plugins/panel/gettingstarted/steps.ts
+- app/core/components/Branding/Branding.tsx
+- app/plugins/panel/welcome/Welcome.tsx
+- app/plugins/panel/gettingstarted/steps.ts
 
 Case-2: changing Footer
-app/core/components/Footer/Footer.tsx
+- app/core/components/Footer/Footer.tsx
 
 Case-3: removing Footer
-app/core/components/Page/Page.tsx
+- app/core/components/Page/Page.tsx
 
 Case-4: removing "Stats and licensing"
-At menubar and sidebar: pkg/services/licensing/oss.go
+- At menubar and sidebar: pkg/services/licensing/oss.go
 
 ## Build
 
@@ -97,20 +97,13 @@ make build-go
 - <grafana>/pkg/services/licensing/oss.go  
 - <grafana>/public/app/core/components/Branding/Branding.tsx
 - <grafana>/public/app/core/components/Footer/Footer.tsx
-    
-<grafana>/public/app/core/components/Page/Page.tsx
-    
-<grafana>/public/app/plugins/panel/gettingstarted/steps.ts
-    
-<grafana>/public/app/plugins/panel/welcome/Welcome.tsx
-    
-<grafana>/public/img/grafana_icon.svg
-    
-<grafana>/public/views/index.html
-    
-.. index-template.html
+- <grafana>/public/app/core/components/Page/Page.tsx
+- <grafana>/public/app/plugins/panel/gettingstarted/steps.ts
+- <grafana>/public/app/plugins/panel/welcome/Welcome.tsx
+- <grafana>/public/img/grafana_icon.svg
+- <grafana>/public/views/index-template.html
 
-COMPILED DOWNLOAD
+## COMPILED DOWNLOAD
     
-    https://drive.google.com/drive/folders/1eCyO6rL2iQV4aHJmWUqmn8wEU1la-dZc?usp=sharing
+URL is https://drive.google.com/drive/folders/1eCyO6rL2iQV4aHJmWUqmn8wEU1la-dZc?usp=sharing
     
