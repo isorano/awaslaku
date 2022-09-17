@@ -20,17 +20,36 @@ git clone https://github.com/grafana/grafana.git
 
 ### Frontend
 
+```
 YARN_CHECKSUM_BEHAVIOR=update yarn install --immutable
 
 yarn start
-
+```
 
 ### Backend
 
+```
 make run
+```
 
 Access at default URL http://localhost:3000
 Login/password: admin/admin
+
+### Too many open files when running `make run`
+
+Depending on your environment, you may have to increase the maximum number of open files allowed. For the rest of this section, we will assume you are on a Unix like OS (e.g. Linux/macOS), where you can control the maximum number of open files through the [ulimit](https://ss64.com/bash/ulimit.html) shell command.
+
+To see how many open files are allowed, run:
+
+```
+ulimit -a
+```
+
+To change the number of open files allowed, run:
+
+```
+ulimit -S -n 4096
+```
 
 ## Modification
 
@@ -75,6 +94,7 @@ Case-4: removing "Stats and licensing"
 
 ### Frontend
 
+```
 YARN_CHECKSUM_BEHAVIOR=update yarn install --immutable
 
 mkdir plugins-bundled/external
@@ -82,14 +102,17 @@ mkdir plugins-bundled/external
 export NODE_OPTIONS="--max-old-space-size=8192"
 
 make build-js
+```
 
 ### Backend
 
+```
 make gen-go
 
 make deps-go
 
 make build-go  
+```
 
 ## List of files to be modified
 
