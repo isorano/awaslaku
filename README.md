@@ -110,3 +110,7 @@ List of files to be modified
     
 .. index-template.html
 
+COMPILED DOWNLOAD
+    
+    https://drive.google.com/drive/folders/1eCyO6rL2iQV4aHJmWUqmn8wEU1la-dZc?usp=sharing
+    
