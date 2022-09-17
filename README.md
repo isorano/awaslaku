@@ -16,7 +16,7 @@ URL: https://github.com/grafana/grafana/blob/main/contribute/developer-guide.md
 
 git clone https://github.com/grafana/grafana.git
 
-## Build
+## Develop
 
 ### Frontend
 
@@ -71,9 +71,9 @@ app/core/components/Page/Page.tsx
 Case-4: removing "Stats and licensing"
 At menubar and sidebar: pkg/services/licensing/oss.go
 
-BUILD
+## Build
 
-Frontend
+### Frontend
 
 YARN_CHECKSUM_BEHAVIOR=update yarn install --immutable
 
@@ -83,7 +83,7 @@ export NODE_OPTIONS="--max-old-space-size=8192"
 
 make build-js
 
-Backend
+### Backend
 
 make gen-go
 
@@ -91,15 +91,12 @@ make deps-go
 
 make build-go  
 
-List of files to be modified
+## List of files to be modified
 
-<grafana>/pkg/api/index.go
-    
-<grafana>/pkg/services/licensing/oss.go
-    
-<grafana>/public/app/core/components/Branding/Branding.tsx
-    
-<grafana>/public/app/core/components/Footer/Footer.tsx
+- <grafana>/pkg/api/index.go
+- <grafana>/pkg/services/licensing/oss.go  
+- <grafana>/public/app/core/components/Branding/Branding.tsx
+- <grafana>/public/app/core/components/Footer/Footer.tsx
     
 <grafana>/public/app/core/components/Page/Page.tsx
     
