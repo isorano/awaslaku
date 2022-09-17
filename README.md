@@ -1,41 +1,43 @@
 # awaslaku
 URL: https://github.com/grafana/grafana/blob/main/contribute/developer-guide.md
 
-Requirements
-    Git
-    Go (see go.mod for minimum required version)
-    Node.js (Long Term Support)
-    Yarn
+## Requirements
+    - Git
+    - Go (see go.mod for minimum required version)
+    - Node.js (Long Term Support)
+    - Yarn
+    ```
       $ sudo corepack enable
-    [make]
-    [gcc]
+    ```
+    - [make]
+    - [gcc]
     
-Clone Grafana
+## Clone Grafana
+
 git clone https://github.com/grafana/grafana.git
 
-Build
+## Build
 
-Frontend
+### Frontend
 
 YARN_CHECKSUM_BEHAVIOR=update yarn install --immutable
 
 yarn start
 
 
-Backend
+### Backend
 
 make run
-
 
 Access at default URL http://localhost:3000
 Login/password: admin/admin
 
---
-Modification
+## Modification
 
 grep -r -l from Grafana root directory
 
 e.g.:
+```
 $ grep -r -l "Welcome to Grafan"
 emails/signup_started.html
 emails/welcome_on_signup.txt
@@ -49,6 +51,7 @@ app/features/dashboard/components/ShareModal/SharePublicDashboard.tsx
 app/features/dashboard/components/ShareModal/SharePublicDashboard.test.tsx
 app/plugins/panel/welcome/Welcome.tsx
 app/plugins/panel/gettingstarted/steps.ts
+```
 
 Case-0: removing "Library panels"
 At menubar: pkg/api/index.go 
