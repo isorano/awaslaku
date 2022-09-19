@@ -126,7 +126,9 @@ make build-go
 - <grafana>/public/img/grafana_icon.svg
 - <grafana>/public/views/index-template.html
 
-## COMPILED DOWNLOAD
+## DOWNLOAD
     
 URL is https://drive.google.com/drive/folders/1eCyO6rL2iQV4aHJmWUqmn8wEU1la-dZc?usp=sharing
     
+## Miscs
+    https://github.com/burningalchemist/sql_exporter
