@@ -1,4 +1,4 @@
-# awaslaku
+# NGawasi
 URL: https://github.com/grafana/grafana/blob/main/contribute/developer-guide.md
 
 ## Requirements
